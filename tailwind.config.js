@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '5.5xl': '3.5rem',
+      },
+
+      gridTemplateColumns: {
+        'autoCol': '1fr auto',
+      },
+
       colors: {
         'body': '#f0f3f8',
         'button': '#372b62',

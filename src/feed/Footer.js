@@ -20,7 +20,7 @@ const icons = [
 
 function Footer() {
   return(
-    <div className="grid gap-2 mt-4">
+    <div className="grid gap-2 mt-4 md:mt-24 xl:p-0 xl:mt-12">
       <p className="font-medium text-paragraphColor">Used by these companies</p>
       <ul className="flex flex-wrap gap-3 mt-4 mb-4">
         {icons.map(({src, alt}) => (

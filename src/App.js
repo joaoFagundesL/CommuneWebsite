@@ -1,16 +1,16 @@
 import React from 'react';
 import Nav from './feed/Nav';
 import Main from './feed/Main';
-import Form from './feed/Form';
 import Footer from './feed/Footer';
 
 
 function App() {
   return(
-    <div className='min-h-screen bg-body m-5 px-4 rounded-lg'>
+    <div className='min-h-screen  bg-body m-5 px-4 rounded-lg
+    md:px-24 xl:px-48 
+    '>
       <Nav />
       <Main />
-      <Form />
       <Footer />
     </div>
   )
