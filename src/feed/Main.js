@@ -8,7 +8,7 @@ function Main() {
     ">  
       <div className="grid gap-6 xl:flex xl:flex-col xl:max-w-4xl">
         <div className="mt-16 cursor-pointer bg-button rounded-full text-center py-2 px-6
-        md:mt-24 xl:w-fit xl:flex xl:items-center">
+        md:mt-24 xl:mt-12 2xl:mt-24 xl:w-fit xl:flex xl:items-center">
           <span className="text-firstButtonColor ">
             We are now allowing early-access for
             users. <a className="underline font-semibold" href="#">Learn more</a>
@@ -39,7 +39,7 @@ function Main() {
       </div>
 
       <div className="hidden xl:block xl:ml-auto">
-        <img className="max-w-md" src={img} alt="" />
+        <img className="xl:max-w-sm 2xl:max-w-md" src={img} alt="" />
       </div>
 
     </div>
