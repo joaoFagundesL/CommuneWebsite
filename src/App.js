@@ -2,8 +2,6 @@ import React from 'react';
 import Nav from './feed/Nav';
 import Main from './feed/Main';
 import Footer from './feed/Footer';
-import './global.css'
-
 
 function App() {
   return(

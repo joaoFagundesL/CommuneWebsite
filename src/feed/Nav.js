@@ -17,6 +17,11 @@ const Nav = () => {
         ${menuOpen ? 'menu-nav opened bg-slate-500' : 'menu-nav bg-slate-500'}`}>
 
     <style>{`
+     html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
       .menu-nav.opened {
         transform: translateX(0%);
         transition: transform 350ms ease-in;
@@ -34,8 +39,6 @@ const Nav = () => {
         .menu-nav {
           transform: translateX(0);
           inset: 0 0 0 0;
-          background: transparent;
-          position: static;
       }
     `}</style>
 
