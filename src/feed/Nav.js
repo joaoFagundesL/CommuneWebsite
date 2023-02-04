@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../Assets/Logo.svg';
 import menu from '../Assets/HamburgerMenu.svg';
 import SecondButton from '../components/SecondButton';
+import '../App.css'
 
 const menuText = ['Features', 'Affiliates', 'Pricing', 'Communites'];
 
@@ -26,18 +27,21 @@ const Nav = () => {
       .menu-nav {
         display: flex;
         justify-content: center;
-        position: absolute;
+        position: fixed;
         transform: translateX(100%);
-        inset: 0 0 0 30%;
+        left: 30%;
+        right: 0;
+        top: 0;
+        bottom: 0;
         transition: transform 350ms ease-in;
       }
 
       @media screen and (min-width: 1280px) {
         .menu-nav {
           transform: translateX(0);
-          inset: 0 0 0 0;
+          left: 0;
           background: transparent;
-          position: static;
+          position: fixed;
 
       }
     `}</style>

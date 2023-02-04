@@ -3,13 +3,6 @@ import Nav from './feed/Nav';
 import Main from './feed/Main';
 import Footer from './feed/Footer';
 
-<style>{`
-      html, body {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-      }
-
-    `}</style>
 function App() {
   return(
     <div className='min-h-screen overflow-x-hidden bg-body m-5 px-4 rounded-lg
