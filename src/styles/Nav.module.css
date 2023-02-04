@@ -7,6 +7,7 @@
   justify-content: center;
   position: fixed;
   transform: translateX(100%);
+  background-color: slategray;
   left: 30%;
   right: 0;
   top: 0;
@@ -19,7 +20,8 @@
     transform: translateX(0);
     left: 0;
     background: transparent;
-    position: fixed;
+    position: static;
+    
   }
 
 }
