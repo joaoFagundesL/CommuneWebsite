@@ -13,11 +13,31 @@ const Nav = () => {
     <div className='pt-14 flex justify-between'>
       <img src={logo} className='cursor-pointer' alt="" />
 
-      <nav className={`xl:flex xl:static xl:bg-inherit xl:translate-x-0 xl:min-h-0
-        ${menuOpen 
-        ? 'flex justify-center absolute top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-0 transition-transform' 
-        :  'flex justify-center top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-full transition-transform'}`}> 
+      <nav className={`
+        ${menuOpen ? 'menu-nav opened bg-slate-500' : 'menu-nav bg-slate-500'}`}>
 
+    <style>{`
+      .menu-nav.opened {
+        transform: translateX(0%);
+        transition: transform 350ms ease-in;
+      }
+      .menu-nav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        transform: translateX(100%);
+        inset: 0 0 0 30%;
+        transition: transform 350ms ease-in;
+      }
+
+      @media screen and (min-width: 1280px) {
+        .menu-nav {
+          transform: translateX(0);
+          inset: 0 0 0 0;
+          background: transparent;
+          position: static;
+      }
+    `}</style>
 
         <ul className={`xl:items-center xl:gap-8 xl:flex xl:flex-row xl:mt-0 ${menuOpen? 'flex gap-8 items-center flex-col mt-24' : 'hidden'}`}>
 
