@@ -25,7 +25,7 @@ function Footer() {
       <ul className="flex flex-wrap gap-3 mt-4 mb-4">
         {icons.map(({src, alt}) => (
           <li key={src}>
-            <img src={src} alt={alt} />
+            <img className="cursor-pointer" src={src} alt={alt} />
           </li>
         ))}
       </ul>
