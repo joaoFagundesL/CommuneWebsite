@@ -39,6 +39,9 @@ const Nav = () => {
         .menu-nav {
           transform: translateX(0);
           inset: 0 0 0 0;
+          background: transparent;
+          position: static;
+          
       }
     `}</style>
 
