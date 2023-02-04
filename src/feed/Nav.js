@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../Assets/Logo.svg';
 import menu from '../Assets/HamburgerMenu.svg';
 import SecondButton from '../components/SecondButton';
-import '../App.css'
+import styles from '../styles/Nav.component.css'
 
 const menuText = ['Features', 'Affiliates', 'Pricing', 'Communites'];
 
@@ -14,37 +14,9 @@ const Nav = () => {
     <div className='pt-14 flex justify-between'>
       <img src={logo} className='cursor-pointer' alt="" />
 
-      <nav className={`
-        ${menuOpen ? 'menu-nav opened bg-slate-500' : 'menu-nav bg-slate-500'}`}>
+      <nav className={`${styles.menuNav}
+        ${menuOpen ? styles.opened : ''}`}>
 
-    <style>{`
-     
-  
-      .menu-nav.opened {
-        transform: translateX(0%);
-        transition: transform 350ms ease-in;
-      }
-      .menu-nav {
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        transform: translateX(100%);
-        left: 30%;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        transition: transform 350ms ease-in;
-      }
-
-      @media screen and (min-width: 1280px) {
-        .menu-nav {
-          transform: translateX(0);
-          left: 0;
-          background: transparent;
-          position: fixed;
-
-      }
-    `}</style>
 
         <ul className={`xl:items-center xl:gap-8 xl:flex xl:flex-row xl:mt-0 ${menuOpen? 'flex gap-8 items-center flex-col mt-24' : 'hidden'}`}>
 
