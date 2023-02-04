@@ -15,8 +15,8 @@ const Nav = () => {
 
       <nav className={`xl:flex xl:static xl:bg-inherit xl:translate-x-0 xl:min-h-0
         ${menuOpen 
-        ? 'flex justify-center absolute min-h-screen top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-0 transition-transform' 
-        :  ' flex justify-center absolute min-h-screen top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-full transition-transform'}`}> 
+        ? 'flex justify-center absolute top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-0 transition-transform' 
+        :  ' flex justify-center absolute top-0 left-2/4 bottom-0 right-0 bg-slate-500 translate-x-full transition-transform'}`}> 
 
 
         <ul className={`xl:items-center xl:gap-8 xl:flex xl:flex-row xl:mt-0 ${menuOpen? 'flex gap-8 items-center flex-col mt-24' : 'hidden'}`}>
